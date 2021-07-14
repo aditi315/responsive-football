@@ -1,0 +1,105 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+/* common style  */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* top part  */
+.top-banner{
+    background-color: #2D25A0;
+    width: 100%;
+    height:100%;
+    display: grid;
+    padding-bottom: 80px;
+    grid-template-columns: repeat(2,1fr);
+}
+.top-left{
+    margin-left: 130px;
+    margin-top: 160px;
+}
+.section-title{
+    color: #FFFFFF;
+    font-size:50px;
+    margin-bottom: 10px;
+    
+}
+.watch-arrow{
+    display: flex;
+    column-gap:10px;
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.watch-live a{
+    color: #FFFFFF; 
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    
+}
+.fa-arrow-right{
+    color: #FFFFFF; 
+}
+.top-right img{
+    width: 556px;
+    height: 438px;
+    margin-left: 100px;
+    margin-top: 140px;
+    margin-right:156px ;
+}
+/* players photo  */
+.photo-album{
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 2em;
+    margin-top: 70px;
+    margin-left: 170px;
+    margin-right: 170px;
+    
+}
+.photo-frame{
+    box-shadow: 10px 10px 30px rgb(214, 208, 208);
+    padding: 15px;
+}
+.photo img{
+    width: 100%;
+}
+/* footer  */
+.footer-item{
+   margin-top: 150px;
+   padding-left: 200px;
+   padding-bottom: 50px;
+   display: grid;
+  
+}
+.footer-icon{
+    padding-left:400px;
+    font-size: 20px;
+    display: flex;
+    column-gap: 30px;
+    margin-top: 5px;
+}
+.footer-pic img{
+    width: 35%;
+    margin-left: 300px;
+}
+.footer-para{
+    padding-top:0;
+    margin-left: 380px;
+}
+/* media Queries */
+/* mobile device */
+@media only screen and (max-width:688px){
+
+    .top-banner, .photo-album, .footer-item{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .photo, .photo-detail{
+        flex-direction: column;
+    }
+}
